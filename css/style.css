@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+}
+#wrapper {
+  width: 960px;
+  margin: 15px auto;
+}
+#map {
+  height: 600px;
+  margin: 15px auto;
+}
+
+.legend, .temporal-legend {
+  padding: 6px 10px;
+  font: 10px/12px Arial, Helvetica, sans-serif;
+ 	background: 'white';
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.temporal-legend {
+  font: 12px/14px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#legendTitle {
+	text-align: center;
+ 	margin-bottom: 15px;
+ 	font-variant: small-caps;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.symbolsContainer {
+  float: left;
+	margin-left: 50px;
+}
+.legendCircle {
+  border-radius:50%;
+  border: 1px solid #dd1c77;
+  background: rgba(201, 148, 199, .6);
+ 	display: inline-block;
+}
+.legendValue {
+  position: absolute;
+  right: 8px;
+}
+.range-slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #04AA6D; /*#708598; /*#04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range-slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #708598; /*#04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
